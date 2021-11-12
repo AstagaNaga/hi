@@ -1,0 +1,75 @@
+Version control 
+
+GitHub stores repositories 
+repositories holds our codes etc... 
+
+
+Making new repositories:
+- Go to github.com/new 
+- give it name as long as it does not collide with existing repository name
+- Public anyone can download
+- Private can choose who to access
+- create repository 
+
+Download repository to computer (cloning):
+- on terminal 
+    run git clone <url> #downloads contents in repository to computer 
+- repository will be found in folder
+- on terminal
+    run touch #creates file 
+        touch hello.html
+
+Commit = saving current state of file 
+- on terminal   
+    #tracks the file so it knows which file to commit later
+    run git add <filename>
+
+    #save current state/snapshot in repository
+    #message informs changes made
+    run git commit -m "message"
+
+    #currently make changes local computer not online 
+
+    #reports what's going on in repository
+    run git status 
+
+    origin = online repository 
+
+#push the changes in local server to github
+    #pushes to remote server 
+    run git push 
+
+#add all of the files changed and commit
+    #a = all 
+    run git commit -am "message"
+
+#download latest ver repository from GitHub
+    run git pull 
+
+MERGE CONFLICTS 
+
+above === is your changes below remote changes 
+
+remove markers and settle on resolution of CONFLICTS
+
+then commit changes and merge 
+
+KEEP TRACK CHANGES 
+- on terminal   
+    run git log 
+
+
+REVERT current repository to older ver. 
+
+- on terminal   
+#hard reset to previous ver
+    run git reset --hard <commit hash>
+#back to OG ver from remote repository 
+    run git reset --hard origin/master
+
+BRANCHING 
+- solution to linearity 
+- work on diff. parts of repository at same time
+
+Master branch = default branch up to date stable ver. 
+Feature branch = additional feature 
